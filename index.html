@@ -168,7 +168,7 @@
 </div>
 
 <div class="block">
-  <div class="block-label">Until 30 November</div>
+  <div class="block-label">Until January 29th</div>
   <div class="rings" id="rings-container">
     <div class="ring-wrap">
       <div class="ring-container">
@@ -259,10 +259,7 @@
     }
   }
   function getTarget() {
-    const now = new Date();
-    let t = new Date(now.getFullYear(), 10, 30, 0, 0, 0, 0);
-    if (t <= now) t = new Date(now.getFullYear() + 1, 10, 30, 0, 0, 0, 0);
-    return t;
+    return new Date(2027, 0, 29, 0, 0, 0, 0);
   }
   function updateEvent() {
     const now = new Date();
